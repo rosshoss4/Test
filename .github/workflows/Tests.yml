@@ -22,7 +22,7 @@ jobs:
     - name: Build and Run Test
       run: |
         ls
-        "${GITHUB_WORKSPACE}/TestScripts/ls"
+        /TestScripts/ls"
         "${GITHUB_WORKSPACE}/TestScripts/javac HelloWorld.java "
         "${GITHUB_WORKSPACE}/TestScripts/Java HelloWorld.java"
     - name: Publish Test Report
