@@ -25,7 +25,7 @@ jobs:
         cd TestScripts
         ls
         javac HelloWorld.java
-        java HelloWorld.java
+        java HelloWorld
       # "${GITHUB_WORKSPACE}/TestScripts/javac HelloWorld.java"
       # "${GITHUB_WORKSPACE}/TestScripts/Java HelloWorld.java"
     - name: Publish Test Report
