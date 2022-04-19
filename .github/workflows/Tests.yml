@@ -24,8 +24,10 @@ jobs:
         ls
         cd TestScripts
         ls
-        javac HelloWorld.java
-        java HelloWorld
+        javac MessageUtil.java TestJunit.java TestRunner.java
+        java org.junit.runner.JUnitCore TestRunner.java
+      # javac HelloWorld.java
+      # java HelloWorld
       # "${GITHUB_WORKSPACE}/TestScripts/javac HelloWorld.java"
       # "${GITHUB_WORKSPACE}/TestScripts/Java HelloWorld.java"
     - name: Publish Test Report
